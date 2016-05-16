@@ -12,6 +12,9 @@
 		75779AF41CE9C36900052508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75779AF21CE9C36900052508 /* Main.storyboard */; };
 		75779AF61CE9C36900052508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75779AF51CE9C36900052508 /* Assets.xcassets */; };
 		75779AF91CE9C36900052508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75779AF71CE9C36900052508 /* LaunchScreen.storyboard */; };
+		75779B031CE9C38E00052508 /* ocfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 75779B021CE9C38E00052508 /* ocfile.m */; };
+		75779B0D1CE9C5B600052508 /* TXHRrettyRuler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75779B0A1CE9C5B600052508 /* TXHRrettyRuler.m */; };
+		75779B0E1CE9C5B600052508 /* TXHRulerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75779B0C1CE9C5B600052508 /* TXHRulerScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,13 @@
 		75779AF51CE9C36900052508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75779AF81CE9C36900052508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75779AFA1CE9C36900052508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75779B001CE9C38D00052508 /* testOcSf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testOcSf-Bridging-Header.h"; sourceTree = "<group>"; };
+		75779B011CE9C38E00052508 /* ocfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocfile.h; sourceTree = "<group>"; };
+		75779B021CE9C38E00052508 /* ocfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ocfile.m; sourceTree = "<group>"; };
+		75779B091CE9C5B600052508 /* TXHRrettyRuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHRrettyRuler.h; sourceTree = "<group>"; };
+		75779B0A1CE9C5B600052508 /* TXHRrettyRuler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHRrettyRuler.m; sourceTree = "<group>"; };
+		75779B0B1CE9C5B600052508 /* TXHRulerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHRulerScrollView.h; sourceTree = "<group>"; };
+		75779B0C1CE9C5B600052508 /* TXHRulerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHRulerScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,29 @@
 		75779AED1CE9C36900052508 /* testOcSf */ = {
 			isa = PBXGroup;
 			children = (
+				75779B081CE9C5B600052508 /* PrettyRulerClass */,
 				75779AEE1CE9C36900052508 /* AppDelegate.swift */,
 				75779AF01CE9C36900052508 /* ViewController.swift */,
 				75779AF21CE9C36900052508 /* Main.storyboard */,
 				75779AF51CE9C36900052508 /* Assets.xcassets */,
 				75779AF71CE9C36900052508 /* LaunchScreen.storyboard */,
 				75779AFA1CE9C36900052508 /* Info.plist */,
+				75779B011CE9C38E00052508 /* ocfile.h */,
+				75779B021CE9C38E00052508 /* ocfile.m */,
+				75779B001CE9C38D00052508 /* testOcSf-Bridging-Header.h */,
 			);
 			path = testOcSf;
+			sourceTree = "<group>";
+		};
+		75779B081CE9C5B600052508 /* PrettyRulerClass */ = {
+			isa = PBXGroup;
+			children = (
+				75779B091CE9C5B600052508 /* TXHRrettyRuler.h */,
+				75779B0A1CE9C5B600052508 /* TXHRrettyRuler.m */,
+				75779B0B1CE9C5B600052508 /* TXHRulerScrollView.h */,
+				75779B0C1CE9C5B600052508 /* TXHRulerScrollView.m */,
+			);
+			path = PrettyRulerClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +162,9 @@
 			files = (
 				75779AF11CE9C36900052508 /* ViewController.swift in Sources */,
 				75779AEF1CE9C36900052508 /* AppDelegate.swift in Sources */,
+				75779B0E1CE9C5B600052508 /* TXHRulerScrollView.m in Sources */,
+				75779B031CE9C38E00052508 /* ocfile.m in Sources */,
+				75779B0D1CE9C5B600052508 /* TXHRrettyRuler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +277,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testOcSf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kay.testOcSf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testOcSf/testOcSf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +291,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testOcSf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kay.testOcSf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testOcSf/testOcSf-Bridging-Header.h";
 			};
 			name = Release;
 		};
