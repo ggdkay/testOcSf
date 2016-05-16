@@ -16,9 +16,9 @@ xcode will not help create "projectName-Bridging-Header.h"(so so so you can use 
 
 
 //float to string and format .1f
-  currentFreqLabel.text = String.init(format: "%.1f",rulerScrollView.rulerValue+87.0)
+ >> currentFreqLabel.text = String.init(format: "%.1f",rulerScrollView.rulerValue+87.0)
     
 //string to float to cgfloat 
-  let cureFloat : CGFloat = CGFloat.init(Float.init(radioFreqList[idx].mItem!)!)
+ >> let cureFloat : CGFloat = CGFloat.init(Float.init(radioFreqList[idx].mItem!)!)
   prettyRadioHzRuler.setRulerValue(cureFloat-87)
   
